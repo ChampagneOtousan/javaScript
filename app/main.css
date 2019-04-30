@@ -14,7 +14,7 @@ h1, .screen-grid h3 { text-align: center;}
   font-size: 100px;
 }
 
-.screen-grid div:nth-child(2) {
+.screen-grid > div:nth-child(2) {
   border: 1px solid black;
 }
 
