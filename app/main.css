@@ -1,0 +1,15 @@
+h1, .screen-grid h3 { text-align: center;}
+
+
+.screen-grid {
+  display: grid;
+  grid-template: 500px / 50% 50%;
+}
+
+.screen-grid div:nth-child(1) {
+  border: 1px solid blue;
+}
+
+.screen-grid div:nth-child(2) {
+  border: 1px solid black;
+}
