@@ -13,11 +13,14 @@ function withdrawMoney() {
   let OD = document.querySelector("#odProtect")
   let bal = document.querySelector("#bank-balance")
   let currentBal = bal.innerText
-  let total = parseInt(currentBal) - parseInt(amount)
-  if (OD.checked() == true) {
-    bal.innerText = bal
+  let odMessage = document.querySelector("error-message")
+  if (OD.checked == true) {
+    odMessage.classList.remove("hidden")
     alert("Overdraft Prevented")
-  }
+  } else {
+  let total = parseInt(currentBal) - parseInt(amount)
+  bal.innerText = bal
+}
   if (total <= 0) {
     bal.classList.add("negative-balance")
   }
