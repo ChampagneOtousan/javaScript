@@ -14,3 +14,4 @@
 - element.innerText // modifies what is written inside of an HTML element.
 - setTimeout // runs a function after the specified time in milliseconds.
 - setInervals // runs a function every x amount of milliseconds.
+```
