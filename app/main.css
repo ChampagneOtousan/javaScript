@@ -8,8 +8,26 @@ h1, .screen-grid h3 { text-align: center;}
 
 .screen-grid div:nth-child(1) {
   border: 1px solid blue;
+  text-align: center;
+}
+.screen-grid div:nth-child(1) p {
+  font-size: 100px;
 }
 
 .screen-grid div:nth-child(2) {
   border: 1px solid black;
+}
+
+.negative-balance {
+  color: red;
+  animation: flash .5s infinite alternate;
+}
+
+@keyframes flash {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
