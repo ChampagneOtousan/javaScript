@@ -16,4 +16,7 @@ function sepiaTheme() {
 function turnPage() {
   let screen = document.getElementById('screen')
   screen.classList.add('page')
+  setTimeout(function() {
+    screen.classList.remove('page')
+  }, 1400)
 }
